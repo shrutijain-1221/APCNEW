@@ -1,0 +1,68 @@
+import React from 'react';
+import bg4 from '../assets/bg5.png';
+import centerImg from '../assets/onestop.png'; // Replace with your actual image
+import excelIcon from '../assets/ethical.svg'; // Replace with your icon
+
+const Ethical = () => {
+  return (
+    <div className="relative w-full h-auto">
+      {/* Background Image */}
+      <img
+        src={bg4}
+        alt="Background"
+        className="w-full h-full object-cover absolute top-0 left-0 z-0"
+      />
+
+      {/* Overlay content */}
+      <div className="relative z-10 flex flex-col items-center py-20 px-4 md:px-12 lg:px-20">
+        {/* Title */}
+        <h2 className="text-5xl md:text-6xl font-bold font-[Inter] text-[#514747] text-center mb-20">
+         Flexible & {' '}
+          <span className="font-['Dancing_Script',cursive] text-[#514747]">
+           Fair Practices
+          </span>
+        </h2>
+
+        {/* Figma-style content section */}
+        <div className="flex flex-col lg:flex-row justify-between items-center w-full gap-12 ">
+          {/* Left Text Section */}
+          <div className="flex-1">
+            <h3 className="text-4xl font-[Inter] font-semibold text-[#514747] mb-4">
+              An Ethical <span className="font-['Dancing_Script',cursive]">overseas accessories</span> manufacturer.
+            </h3>
+            <p className="font-[Inter] text-xl text-[#514747] leading-relaxed mb-3">
+              At <strong>AP Curated Couture</strong>, we believe clothing should feel good —
+              not just on your skin, but in your conscience too.
+            </p>
+            <p className="text-[#514747] font-[Inter]  text-xl leading-relaxed mb-3">
+              We ensure every garment is ethically produced in line with fair trade standards.
+              We are committed to empowering women by providing equal opportunities at every level
+              of our organization.
+            </p>
+            <p className="text-xl font-[Inter] font-semibold text-[#514747]">Ensuring flexible & fair practices</p>
+          </div>
+
+          {/* Center Image */}
+          <div className="flex-1 flex justify-center">
+            <div className="text-center">
+              <img src={centerImg} alt="Chair" className="w-[300px] h-[400px]  mb-2" />
+              <p className="font-[Inter] text-2xl font-bold text-[#514747] leading-relaxed">Your One Stop Solution</p>
+            </div>
+          </div>
+
+          {/* Right Icon + Text */}
+          <div className="flex-1 text-center lg:text-left">
+            <img src={excelIcon} alt="Excel Icon" className="w-52 h-52 mx-auto lg:mx-0 mb-4" />
+            <h4 className="text-3xl font-bold text-[#514747] mb-2">No Child Labour!</h4>
+            <p className="text-[#514747] text-xl leading-relaxed">
+              These are a few core objectives that we focus on in order to uplift society and especially
+              women. This small contribution from our side makes us feel proud of what we do.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Ethical;

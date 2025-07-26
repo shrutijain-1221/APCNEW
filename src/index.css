@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import url('/node_modules/slick-carousel/slick/slick.css');
+@import url('/node_modules/slick-carousel/slick/slick-theme.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+.video{
+  margin: 0 0 !important; 
+}
+.scroll-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+.gradient-box {
+  width: 200px;
+  height: 200px;
+ background: linear-gradient(
+  to right,
+  #B88BC7 0%,
+  #D86E7B 100%
+);
+}
