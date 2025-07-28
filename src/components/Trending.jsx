@@ -1,13 +1,13 @@
 import React from 'react';
 import trending1 from '../assets/trending1.jpg'
-import trending2 from '../assets/trending2.jpg'
+import trending2 from '../assets/trending2.jpeg'
 import trending3 from '../assets/trending3.jpg'
-import bg2 from '../assets/bg2.jpeg'
+import bg8 from '../assets/bg8.png'
 const Trending = () => {
   return (
     <div
       className="bg-cover bg-center py-16"
-     style={{ backgroundImage: `url(${bg2})` }}
+     style={{ backgroundImage: `url(${bg8})` }}
 
     >
       <div className="text-center mb-12 mt-12">
@@ -30,15 +30,15 @@ const Trending = () => {
         {/* Card 2 */}
         <div className="bg-white border-[1px] font-[Inter] border-gray-200 shadow-md  p-4 text-center">
           <img src={trending2} alt="Head-Bands" className="mx-auto h-[312px] mb-4" />
-          <h3 className="text-3xl font-semibold text-[#514747]">Beaded Headbands</h3>
-          <p className=" text-md text-[#514747] mt-2">Handcrafted headbands with intricate beadwork for elegant styling.</p>
+          <h3 className="text-3xl font-semibold text-[#514747]">Fashion Accessories</h3>
+          <p className=" text-md text-[#514747] mt-2">Statement jewelry for every season and occasion.</p>
         </div>
 
         {/* Card 3 */}
         <div className="bg-white border-[1px] font-[Inter] border-gray-200 shadow-md  p-4 text-center">
           <img src={trending3} alt="Purses" className="mx-auto mb-4" />
-          <h3 className="text-3xl font-semibold text-[#514747]">Fashion Accessories</h3>
-          <p className=" text-md text-[#514747] mt-2">Statement jewelry for every season and occasion.</p>
+          <h3 className="text-3xl font-semibold text-[#514747]">Beaded Headbands</h3>
+          <p className=" text-md text-[#514747] mt-2">Handcrafted headbands with intricate beadwork for elegant styling</p>
         </div>
       </div>
     </div>

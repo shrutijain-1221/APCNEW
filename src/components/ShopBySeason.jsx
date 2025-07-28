@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import VideoCarousel from "./VideoCarousel";
-import bg3 from '../assets/bg3.jpeg'
 const seasons = [
   { name: "Valentine's Day", image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" },
   { name: "Crawfish Boil", image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" },
@@ -78,9 +77,7 @@ const ShopBySeason = () => {
 
   return (
     <div
-         className="bg-cover bg-center py-16"
-        style={{ backgroundImage: `url(${bg3})` }}
-   
+         className="bg-cover bg-center py-16 bg-white"
        >
          <div className="text-center mb-12">
            <h2 className="text-6xl font-bold font-[Inter] text-[#514747]">

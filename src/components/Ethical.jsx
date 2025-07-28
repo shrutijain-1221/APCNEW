@@ -1,5 +1,4 @@
 import React from 'react';
-import bg4 from '../assets/bg5.png';
 import centerImg from '../assets/onestop.png'; // Replace with your actual image
 import excelIcon from '../assets/ethical.svg'; // Replace with your icon
 
@@ -7,11 +6,7 @@ const Ethical = () => {
   return (
     <div className="relative w-full h-auto">
       {/* Background Image */}
-      <img
-        src={bg4}
-        alt="Background"
-        className="w-full h-full object-cover absolute top-0 left-0 z-0"
-      />
+      <div className="w-full h-full object-cover absolute top-0 left-0 z-0 bg-[#d5d6c6]"/>
 
       {/* Overlay content */}
       <div className="relative z-10 flex flex-col items-center py-20 px-4 md:px-12 lg:px-20">
@@ -52,11 +47,9 @@ const Ethical = () => {
 
           {/* Right Icon + Text */}
           <div className="flex-1 text-center lg:text-left">
-            <img src={excelIcon} alt="Excel Icon" className="w-52 h-52 mx-auto lg:mx-0 mb-4" />
-            <h4 className="text-3xl font-bold text-[#514747] mb-2">No Child Labour!</h4>
+            <h4 className="text-3xl font-bold text-[#514747] mb-2">ETHICAL MANUFACTURING & SOURCING</h4>
             <p className="text-[#514747] text-xl leading-relaxed">
-              These are a few core objectives that we focus on in order to uplift society and especially
-              women. This small contribution from our side makes us feel proud of what we do.
+            Its your responsibility too! Source from an Ethical Clothing Manufacturer.
             </p>
           </div>
         </div>

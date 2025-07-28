@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useLocation } from 'react-router-dom';
 import axiosInstance from '../utils/axiosInstance';
 import { motion } from 'framer-motion';
-import bg8 from '../assets/bg8.jpg'
+import bg8 from '../assets/bg8.png'
 const chunkSentences = (text, chunkSize = 3) => {
   const sentenceRegex = /(?<!\d)\. (?=[A-Z])/g;
   const sentences = text.split(sentenceRegex).map(s => s.trim()).filter(Boolean);

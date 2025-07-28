@@ -1,5 +1,5 @@
 import React from 'react';
-import bg6 from '../assets/bg6.png';
+import bg6 from '../assets/bg8.png';
 import akansha from '../assets/founder.png';
 import kamal from '../assets/founder1.png';
 import { FaLinkedin } from "react-icons/fa";

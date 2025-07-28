@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import axiosInstance from '../utils/axiosInstance'; // Axios instance with baseURL
-import bg10 from '../assets/bg8.jpg';
+import bg10 from '../assets/bg8.png';
 // Utility to convert blog title into slug
 const slugify = (text) =>
   text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
