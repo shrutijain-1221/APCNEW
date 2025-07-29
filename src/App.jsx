@@ -10,8 +10,6 @@ import Footer from './components/Footer'
 import TestimonalsPage from './components/TestimonalsPage'
 import Blogs from './pages/Blogs'
 import BlogDetail from './components/BlogDetail'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 // import Blogs from './components/Blogs'
 // import ScrollToTop from './components/ScrollToTop'
 // import AccessoryDetail from './pages/AccessoryDetail'

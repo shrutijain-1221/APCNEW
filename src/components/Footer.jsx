@@ -8,7 +8,7 @@ import bg1 from '../assets/bg2.jpeg'
 const Footer = () => {
   return (
    <footer
-  className="footer-section bg-[#4A5565]"
+  className="footer-section bg-[#514748]"
   style={{
     backgroundSize: 'cover',
     backgroundPosition: 'center',
