@@ -49,12 +49,12 @@ const Navbar = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 10 }}
                   transition={{ duration: 0.2 }}
-                  className="absolute top-8 -left-72 -translate-x-1/2 mt-2 bg-white shadow-lg border rounded-md z-50 w-[800px] p-8 flex gap-6"
+                  className="absolute top-8 left-20 -translate-x-1/2 mt-2 bg-white shadow-lg border rounded-md z-50 w-[1000px] p-8 flex gap-6"
                 >
                   {/* Hair Accessories */}
                   <div>
-                    <h4 className="font-semibold text-md text-[#232323] mb-2">Hair Accessories</h4>
-                    <ul className="space-y-1 pl-2 font-[Inter] text-[20px]">
+                    <h4 className="font-semibold text-2xl font-['Dancing_Script',cursive] text-[#514747] mb-2">Hair Accessories</h4>
+                    <ul className="space-y-1 pl-2 font-[Inter] text-[20px] text-[#514747]">
                       <li><NavLink to="/accessories/headbands">Headbands</NavLink></li>
                       <li><NavLink to="/accessories/scrunchies">Scrunchies</NavLink></li>
                       <li><NavLink to="/accessories/alligator-bows">Alligator Bows</NavLink></li>
@@ -66,8 +66,8 @@ const Navbar = () => {
 
                   {/* Jewelry */}
                   <div>
-                    <h4 className="font-semibold text-md text-[#232323] mb-2">Jewelry & Small Accessories</h4>
-                    <ul className="space-y-1 pl-2 font-[Inter] text-[20px]">
+                    <h4 className="font-semibold text-2xl font-['Dancing_Script',cursive] text-[#514747] mb-2">Jewelry & Small Accessories</h4>
+                     <ul className="space-y-1 pl-2 font-[Inter] text-[20px] text-[#514747]">
                       <li><NavLink to="/accessories/earrings">Earrings</NavLink></li>
                       <li><NavLink to="/accessories/brooches">Brooches</NavLink></li>
                       <li><NavLink to="/accessories/key-circle-chains">Key Circle/Chains</NavLink></li>
@@ -79,8 +79,8 @@ const Navbar = () => {
 
                   {/* Bags */}
                   <div>
-                    <h4 className="font-semibold text-md text-[#232323] mb-2">Bags & Storage</h4>
-                    <ul className="space-y-1 pl-2 font-[Inter] text-[20px]">
+                    <h4 className="font-semibold text-2xl font-['Dancing_Script',cursive] text-[#514747] mb-2">Bags & Storage</h4>
+                     <ul className="space-y-1 pl-2 font-[Inter] text-[20px] text-[#514747]">
                       <li><NavLink to="/accessories/tote-bags">Tote Bags</NavLink></li>
                       <li><NavLink to="/accessories/coin-purses">Coin Purses</NavLink></li>
                       <li><NavLink to="/accessories/mobile-purses">Mobile Purses</NavLink></li>
@@ -92,8 +92,8 @@ const Navbar = () => {
 
                   {/* Misc */}
                   <div>
-                    <h4 className="font-semibold text-md text-[#232323] mb-2">Miscellaneous</h4>
-                    <ul className="space-y-1 pl-2 font-[Inter] text-[20px]">
+                    <h4 className="font-semibold text-2xl font-['Dancing_Script',cursive] text-[#514747] mb-2">Miscellaneous</h4>
+                    <ul className="space-y-1 pl-2 font-[Inter] text-[20px] text-[#514747]">
                       <li><NavLink to="/accessories/eye-masks">Eye Masks</NavLink></li>
                       <li><NavLink to="/accessories/coasters">Coasters</NavLink></li>
                       <li><NavLink to="/accessories/trucker-hats">Trucker Hats</NavLink></li>

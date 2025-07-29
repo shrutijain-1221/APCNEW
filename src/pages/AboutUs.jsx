@@ -44,7 +44,7 @@ const AboutUs = () => {
     <h2 className="text-6xl font-semibold font-[Inter] text-white mb-3">
         About Us
       </h2>
-      <p className=" text-5xl mb-10 text-white font-['Dancing_Script',cursive] ">
+      <p className="text-3xl p-2 md:p-0 md:text-5xl  mb-10 text-white font-['Dancing_Script',cursive] ">
         The People Who Make It Happen - Founders and Founders' Story
       </p>
   </div>
@@ -203,7 +203,7 @@ const AboutUs = () => {
 
 
 
-<div className="mt-20 ">
+<div className="mt-20 mb-10">
   <h3 className="text-3xl md:text-5xl font-semibold text-center font-['Dancing_Script',cursive] text-[#514747] mb-2">
     Association
   </h3>

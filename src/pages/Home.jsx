@@ -95,7 +95,7 @@ const Home = () => {
           <p className="text-lg sm:text-xl font-bold text-gray-700 mt-3 text-center px-4">
             Getting started with us is easy.
           </p>
-          <p className='text-lg sm:text-xl italic text-gray-700 mt-3 text-center px-4'>
+          <p className='text-lg sm:text-xl italic text-gray-700 mt-3 text-center px-4 mb-3'>
            Just share your accessories idea with us and we will take care of everything from sampling to delivering your accessories production.
           </p>
         </div>

@@ -12,16 +12,18 @@ import Blogs from './pages/Blogs'
 import BlogDetail from './components/BlogDetail'
 // import Blogs from './components/Blogs'
 // import ScrollToTop from './components/ScrollToTop'
-// import AccessoryDetail from './pages/AccessoryDetail'
+ import AccessoryDetail from './pages/AccessoryDetail'
 // import BlogDetail from './components/BlogDetail'
-// import AccessoryLayout from './pages/AccessoryLayout'
+import AccessoryLayout from './pages/AccessoryLayout'
 // import WhatsappFloat from './components/WhatsappFloat'
 // import ChatbotFloat from './components/ChatbotFloat'
 import Infrastructure from './pages/Infrastructure'
 import ContactUs from './pages/ContactUs'
-// import AccessoryProductDetailPage from './pages/AccessoryProductDetailPage'
+ import AccessoryProductDetailPage from './pages/AccessoryProductDetailPage'
+import TrendingUsage from './pages/TrendingUsage'
 // import Faq from './pages/Faq'
 // import ContactUs from './pages/ContactUs'
+
 // import Interv from './pages/Interv'
 
 function App() {
@@ -41,6 +43,14 @@ function App() {
        <Route path='/aboutus' element={<AboutUs/>}/>
           <Route path='/infrastructure' element={<Infrastructure />} />
             <Route path='/contact' element={<ContactUs/>}/>
+                  <Route path='/accessories' element={<AccessoryLayout />}>
+
+    <Route path=':type' element={<AccessoryDetail />} />
+    
+   
+  </Route>
+  <Route path='/accessories/:type/:productId' element={<AccessoryProductDetailPage/>}/>
+  <Route path='/trending' element={<TrendingUsage/>}/>
       {/* <Route path='/aboutus' element={<AboutUs/>}/>
       // <Route path='/testimonals' element={<TestimonalsPage/>}/>
       <Route path='/products' element={<Products/>}/>
