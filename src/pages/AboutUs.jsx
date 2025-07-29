@@ -9,7 +9,6 @@ import about2 from '../assets/about2.jpg';
 import about3 from '../assets/about.jpg';
 import about4 from '../assets/about4.jpg';
 import about5 from '../assets/about5.jpg';
-import bg10 from '../assets/bg8.jpg'
 
 import asso1 from '../assets/asso1.png';
 import asso2 from '../assets/asso2.png';
@@ -52,8 +51,7 @@ const AboutUs = () => {
 </div>
    </div> 
    <div
-  className="overflow-x-hidden bg-no-repeat bg-cover bg-fixed"
-  style={{ backgroundImage: `url(${bg10})` }}
+  className="overflow-x-hidden bg-no-repeat bg-cover bg-fixed bg-[#d5d6c6]"
 > 
    <h2 className="text-5xl font-semibold font-['Dancing_Script',cursive] text-center mt-10  text-[#514747] mb-5">
         Meet Our Founders

@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Navbar from '../components/Navbar';
 import bgImage from '../assets/bgimg1.jpeg';
-import exh1 from '../assets/exh1.JPG';
-import exh2 from '../assets/exh2.png';
 import Trending from '../components/Trending';
 import ShopBySeason from '../components/ShopBySeason';
 import Ethical from '../components/Ethical';
@@ -11,6 +9,9 @@ import OurFounders from '../components/OurFounders';
 import OurGallery from '../components/OurGallery';
 import HowToPlaceOrder from '../components/HowToPlaceOrder';
 import Infrastructure from '../components/Infrastructure';
+import logo from '../assets/logo-removebg-preview.png';
+import RippleGrid from '../components/RippleGrid';
+import ErrorBoundary from '../components/ErrorBoundary';
 
 const words = ['Exporter', 'Manufacturer'];
 
@@ -40,39 +41,38 @@ const Home = () => {
   return (
     <>
     <div
-      className="relative min-h-screen bg-cover  bg-center text-gray-800 overflow-x-hidden"
+      className="relative min-h-screen bg-cover bg-center text-gray-800 overflow-x-hidden"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
-      <Navbar />
-
-      {/* Decorative images - keep your original positions */}
-      <div>
-        <img
-          src={exh1}
-          alt="Decoration Left"
-          className="absolute w-64 left-30 top-36"
-        />
-        <img
-          src={exh2}
-          alt="Decoration Right"
-          className="absolute left-104 top-64 w-72"
-        />
+      {/* RippleGrid Background */}
+      <div className="absolute inset-0 z-0">
+        <ErrorBoundary>
+          <RippleGrid
+            gridColor="#228B22"
+            opacity={0.8}
+          />
+        </ErrorBoundary>
       </div>
 
-      {/* Centered Text */}
-      <div className="flex flex-col left-44 items-center justify-center px-4 pt-32 space-y-4 relative z-10">
-        <motion.h1
-          className="font-[Inter] text-4xl md:text-7xl font-bold  text-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          AP Curated Couture
-        </motion.h1>
+      <Navbar />
 
-        <div className="mt-5">
+      {/* Centered Text - responsive layout */}
+      <div className="flex flex-col items-center px-4 pt-46 space-y-4 relative z-10">
+        <div className="flex flex-col items-center">
+          <motion.h1
+            className="font-[Inter] text-2xl sm:text-4xl lg:text-7xl font-bold text-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
+          <img
+            src={logo}
+            alt="Logo"
+            className="h-[120px] sm:h-[150px] lg:h-[206px] cursor-pointer mb-6 lg:mb-10 mx-auto"
+          />
+        </motion.h1>
           <motion.p
-            className="text-6xl italic text-gray-600 text-right font-['Dancing_Script',cursive]"
+            className="text-3xl sm:text-4xl lg:text-6xl italic text-gray-600 text-center font-['Dancing_Script',cursive]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
@@ -80,7 +80,7 @@ const Home = () => {
             All-in-1
           </motion.p>
 
-          <div className="text-3xl md:text-7xl  font-semibold h-[60px] mt-5  text-right">
+          <div className="text-2xl sm:text-3xl lg:text-7xl font-semibold h-[40px] sm:h-[50px] lg:h-[60px] mt-5 text-center">
             {text}
             <motion.span
               className="inline-block w-1 bg-black ml-1"
@@ -89,22 +89,22 @@ const Home = () => {
             />
           </div>
 
-          <p className="text-5xl font-['Dancing_Script',cursive] right-10 italic text-gray-700 mt-7  text-right">
+          <p className="text-2xl sm:text-3xl lg:text-5xl font-['Dancing_Script',cursive] italic text-gray-700 mt-7 text-center px-4">
             for your accessories brand.
           </p>
-          <p className="text-xl italic text-gray-700 mt-3  text-right">
+          <p className="text-lg sm:text-xl font-bold text-gray-700 mt-3 text-center px-4">
             Getting started with us is easy.
           </p>
-          <p className='pl-48 text-xl italic text-gray-700 mt-3  text-right'>
-           Just share your accessories idea with us and we will take care of everything<br/> from sampling to delivering your accessories production.
+          <p className='text-lg sm:text-xl italic text-gray-700 mt-3 text-center px-4'>
+           Just share your accessories idea with us and we will take care of everything from sampling to delivering your accessories production.
           </p>
         </div>
       </div>
     </div>
-    <Trending/>
     <ShopBySeason/>
+    <Trending/>
     <Ethical/>
-     <HowToPlaceOrder/>
+    <HowToPlaceOrder/>
     <OurFounders/>
     <OurGallery/>
    <Infrastructure/>
@@ -113,3 +113,4 @@ const Home = () => {
 };
 
 export default Home;
+

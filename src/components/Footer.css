@@ -18,6 +18,7 @@
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  color: #ffffff;
 }
 .footer-links ul {
   list-style: none;
@@ -28,16 +29,19 @@
   margin-bottom: 0.7rem;
 }
 .footer-links a {
-  color: #23232b;
+  color: #ffffff;
   text-decoration: none;
   transition: color 0.2s;
+}
+.footer-links h3 {
+  color: #ffffff;
 }
 .footer-links a:hover {
 font-weight: bold;
 }
 .footer-factory-q {
   font-size: 0.98rem;
-  color: #888;
+  color: #ffffff;
   margin-left: 1.2rem;
   margin-bottom: 0.7rem;
 }
@@ -64,7 +68,7 @@ font-weight: bold;
 }
 .footer-qr-block span {
   font-size: 0.95rem;
-  color: #23232b;
+  color: #ffffff;
   margin-top: 0.2rem;
 }
 .footer-bottom {

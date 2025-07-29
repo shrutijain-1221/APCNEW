@@ -29,12 +29,7 @@ const Navbar = () => {
    <div className={`fixed top-0 left-0 z-50 w-full h-[90px] px-6 md:px-20 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-white/80 backdrop-blur-md'}`}>
 
       <div className="flex items-center justify-between w-full h-full">
-        <img
-          src={logo}
-          alt="Logo"
-          className="h-[76px] cursor-pointer"
-          onClick={() => navigate("/")}
-        />
+       <a href="/" className="text-2xl font-bold font-[Inter]">AP <span className="font-['Dancing_Script',cursive] font-bold">Curated Couture</span></a>
 
         {/* Desktop Nav */}
         <ul className="hidden md:flex gap-8 items-center h-full">

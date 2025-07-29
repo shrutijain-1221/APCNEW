@@ -1,18 +1,30 @@
 import React from 'react';
-import bg6 from '../assets/bg6.png';
+import bg6 from '../assets/bg8.png';
 import akansha from '../assets/founder.png';
 import kamal from '../assets/founder1.png';
 import { FaLinkedin } from "react-icons/fa";
+import RippleGrid from './RippleGrid';
+import ErrorBoundary from './ErrorBoundary';
 //import linkedinIcon from '../assets/linkedin.svg'; // Add this icon
 
 const OurFounders = () => {
   return (
     <div className="relative w-full min-h-screen overflow-hidden">
+      {/* RippleGrid Background */}
+      <div className="absolute inset-0 z-0">
+        <ErrorBoundary>
+          <RippleGrid
+            gridColor="#000000"
+            opacity={0.9}
+          />
+        </ErrorBoundary>
+      </div>
+
       {/* Background Image */}
       <img
         src={bg6}
         alt="Background"
-        className="w-full h-full object-cover absolute top-0 left-0 z-0"
+        className="w-full h-full object-cover absolute top-0 left-0 z-1 opacity-80"
       />
 
       {/* Content */}

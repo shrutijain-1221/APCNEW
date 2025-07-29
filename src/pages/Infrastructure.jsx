@@ -12,7 +12,6 @@ import machines from '../assets/machines.png';
 import meassurentexpert from '../assets/meassurent-expert.png';
 import wasing from '../assets/washing.png';
 import PhotoGallery from '../components/PhotoGallery';
-import bg10 from '../assets/bg8.jpg'
 const Infrastructure = () => {
   return (
     <div className='overflow-x-hidden mt-[90px]'>
@@ -40,8 +39,7 @@ const Infrastructure = () => {
 
       {/* 3 Column Layout */}
        <div
-        className="overflow-x-hidden bg-no-repeat bg-cover bg-fixed"
-        style={{ backgroundImage: `url(${bg10})` }}
+        className="overflow-x-hidden bg-no-repeat bg-cover bg-fixed bg-[#EFDDC5]"
       > 
  <div className="px-4 py-12 ">
   <div className="grid grid-cols-1 md:grid-cols-3 gap-0 max-w-screen-xl mx-auto">
