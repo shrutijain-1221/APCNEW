@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import akanshaImg from '../assets/founder.png'; 
-import kamalImg from '../assets/founder1.png'; 
+import akanshaImg from '../assets/founder.jpg'; 
+import kamalImg from '../assets/founder1.jpg'; 
 import group from '../assets/team_photo.png'; 
 import Slider from "react-slick";
 import about1 from '../assets/about1.jpg';
@@ -13,6 +13,7 @@ import about5 from '../assets/about5.jpg';
 import asso1 from '../assets/asso1.png';
 import asso2 from '../assets/asso2.png';
 import asso3 from '../assets/asso3.jpg';
+import bg3 from '../assets/bg3.jpeg';
 // Inside AboutUs component
 const teamImages = [
  about1,
@@ -26,15 +27,12 @@ const AboutUs = () => {
    <div className="overflow-x-hidden mt-[90px]">
       
 <div className="relative ">
-  {/* <h3 className="text-2xl md:text-3xl font-semibold text-center mb-6 text-[#232323]">
-    Meet Our Team
-  </h3> */}
 
   <motion.img
     src={group} 
     alt="Group of Employees"
    initial={{ opacity: 0, x: 100 }}
-    whileInView={{ opacity: 1, x: 0 }}
+    animate={{ opacity: 1, x: 0 }}
     transition={{ duration: 1 }}
     className="w-full h-[350px] md:h-full shadow-lg"
   />
@@ -51,7 +49,8 @@ const AboutUs = () => {
 </div>
    </div> 
    <div
-  className="overflow-x-hidden bg-no-repeat bg-cover bg-fixed bg-[#d5d6c6]"
+  className="overflow-x-hidden bg-no-repeat bg-cover bg-fixed"
+  style={{ backgroundImage: `url(${bg3})` }}
 > 
    <h2 className="text-5xl font-semibold font-['Dancing_Script',cursive] text-center mt-10  text-[#514747] mb-5">
         Meet Our Founders
@@ -60,7 +59,7 @@ const AboutUs = () => {
  
 <motion.div
   initial={{ opacity: 0, scale: 0 }}
-  whileInView={{ opacity: 1, scale: 1 }}
+  animate={{ opacity: 1, scale: 1 }}
   transition={{ duration: 1 }}
   className="relative flex justify-center w-full"
 >
@@ -114,8 +113,8 @@ const AboutUs = () => {
   {/* Image with overlay */}
 <motion.div
   initial={{ opacity: 0, scale: 0 }}
-  whileInView={{ opacity: 1, scale: 1 }}
-  transition={{ duration: 1 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 1, delay: 0.5 }}
   className="relative w-full  order-1 md:order-2"
 >
   <img
@@ -181,8 +180,8 @@ const AboutUs = () => {
     {/* Right Single Content Block */}
     <motion.div
       initial={{ opacity: 0, x: 100 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1, delay: 1 }}
       className="w-full md:w-1/2 bg-white shadow-xl p-6 md:p-5"
     >
       <p className="font-[Inter] text-[#514747] text-sm ">

@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { RiArrowDownSLine } from 'react-icons/ri';
-import founder from '../assets/founder.png';
+import founder from '../assets/founder.jpg';
 import Loader from '../components/Loader';
 import { useNavigate } from 'react-router-dom';
 

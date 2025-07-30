@@ -5,6 +5,7 @@ import bgImage from '../assets/bgimg1.jpeg';
 import Trending from '../components/Trending';
 import ShopBySeason from '../components/ShopBySeason';
 import Ethical from '../components/Ethical';
+import VideoSection from '../components/VideoSection';
 import OurFounders from '../components/OurFounders';
 import OurGallery from '../components/OurGallery';
 import HowToPlaceOrder from '../components/HowToPlaceOrder';
@@ -12,7 +13,6 @@ import Infrastructure from '../components/Infrastructure';
 import logo from '../assets/logo-removebg-preview.png';
 import RippleGrid from '../components/RippleGrid';
 import ErrorBoundary from '../components/ErrorBoundary';
-
 const words = ['Exporter', 'Manufacturer'];
 
 const Home = () => {
@@ -104,6 +104,7 @@ const Home = () => {
     <ShopBySeason/>
     <Trending/>
     <Ethical/>
+    <VideoSection/>
     <HowToPlaceOrder/>
     <OurFounders/>
     <OurGallery/>

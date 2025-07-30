@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../assets/logo.webp';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { RiMenu3Line } from "react-icons/ri";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -13,7 +12,8 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const navigate = useNavigate();
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   const toggleMenu = () => setMenuOpen(prev => !prev);
 
@@ -25,8 +25,21 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Determine navbar background based on page and scroll state
+  const getNavbarBackground = () => {
+    if (isHomePage) {
+      // On home page, only show background when scrolled
+      return isScrolled ? 'bg-white shadow-md' : 'bg-transparent';
+    } else {
+      // On other pages, always show solid white background on mobile, semi-transparent on desktop
+      return isScrolled 
+        ? 'bg-white shadow-md' 
+        : 'bg-white md:bg-white/80 md:backdrop-blur-md';
+    }
+  };
+
   return (
-   <div className={`fixed top-0 left-0 z-50 w-full h-[90px] px-6 md:px-20 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-white/80 backdrop-blur-md'}`}>
+   <div className={`fixed top-0 left-0 z-50 w-full h-[90px] px-6 md:px-20 transition-all duration-300 ${getNavbarBackground()}`}>
 
       <div className="flex items-center justify-between w-full h-full">
        <a href="/" className="text-2xl font-bold font-[Inter]">AP <span className="font-['Dancing_Script',cursive] font-bold">Curated Couture</span></a>

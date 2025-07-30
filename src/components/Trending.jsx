@@ -1,7 +1,7 @@
 import React from 'react';
-import trending1 from '../assets/trending1.jpg';
+import trending1 from '../assets/trending1.jpeg';
 import trending2 from '../assets/trending2.jpeg';
-import trending3 from '../assets/trending3.jpg';
+import trending3 from '../assets/trending3.jpeg';
 import bg8 from '../assets/bg8.png';
 
 const Trending = () => {

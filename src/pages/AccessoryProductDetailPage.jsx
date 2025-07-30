@@ -8,8 +8,8 @@ import { FiSearch, FiChevronLeft, FiChevronRight, FiX } from 'react-icons/fi';
 import { FiTruck, FiRotateCw, FiGift, FiInfo, FiDroplet, FiAlignLeft } from 'react-icons/fi';
 import { CiMenuBurger } from "react-icons/ci";
 import fabric from '../assets/fabric.png';
-import founder from '../assets/founder.png';
-import founder1 from '../assets/founder1.png';
+import founder from '../assets/founder.jpg';
+import founder1 from '../assets/founder1.jpg';
 import CustomerReview from '../components/CustomerReview';
 import { MdOutlineDesignServices } from "react-icons/md";
 const ALL_PRODUCTS = [

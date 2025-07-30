@@ -1,6 +1,7 @@
 import React from 'react';
-import group from '../assets/team_photo.png';
 import { motion } from 'framer-motion';
+
+import infra1 from '../assets/infra1.jpeg';
 
 import cadsystem from '../assets/cad-system.png';
 import cutting from '../assets/cutting.png';
@@ -12,18 +13,19 @@ import machines from '../assets/machines.png';
 import meassurentexpert from '../assets/meassurent-expert.png';
 import wasing from '../assets/washing.png';
 import PhotoGallery from '../components/PhotoGallery';
+import bg3 from '../assets/bg3.jpeg';
 const Infrastructure = () => {
   return (
     <div className='overflow-x-hidden mt-[90px]'>
       {/* Header Section */}
       <div className="relative">
        <motion.img
-          src={group} 
+          src={infra1} 
           alt="Group of Employees"
          initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          className="w-full h-[350px] md:h-full shadow-lg"
+          className="w-full h-screen md:h-screen shadow-lg"
         />
         <div className='absolute inset-0 bg-black/50 flex items-center'>
           <div className="px-4 md:px-32 max-w-5xl">
@@ -39,7 +41,8 @@ const Infrastructure = () => {
 
       {/* 3 Column Layout */}
        <div
-        className="overflow-x-hidden bg-no-repeat bg-cover bg-fixed bg-[#EFDDC5]"
+        className="overflow-x-hidden bg-no-repeat bg-cover bg-fixed"
+        style={{ backgroundImage: `url(${bg3})` }}
       > 
  <div className="px-4 py-12 ">
   <div className="grid grid-cols-1 md:grid-cols-3 gap-0 max-w-screen-xl mx-auto">

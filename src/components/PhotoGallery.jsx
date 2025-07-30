@@ -1,18 +1,17 @@
 import React,{ useState } from 'react';
 import { FaPlus } from 'react-icons/fa';
 import group from '../assets/team_photo.png'; 
+
+import infra1 from '../assets/infra1.jpeg'
+import infra2 from '../assets/infra2.jpeg'
+import infra3 from '../assets/infra3.jpeg'
+import infra4 from '../assets/infra4.jpeg'
 // Sample gallery images (replace with your actual image imports or URLs)
 const galleryImages = [
-  group,
-   group,
-    group,
-     group,
-      group,
-       group,
-        group,
-         group,
-          group,
-           group,
+  infra1,
+  infra2,
+  infra3,
+  infra4,
 ];
 
 const PhotoGallery = () => {

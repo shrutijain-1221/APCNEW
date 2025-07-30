@@ -1,7 +1,7 @@
 import React from 'react';
 import bg6 from '../assets/bg8.png';
-import akansha from '../assets/founder.png';
-import kamal from '../assets/founder1.png';
+import akansha from '../assets/founder.jpg';
+import kamal from '../assets/founder1.jpg';
 import { FaLinkedin } from "react-icons/fa";
 import RippleGrid from './RippleGrid';
 import ErrorBoundary from './ErrorBoundary';

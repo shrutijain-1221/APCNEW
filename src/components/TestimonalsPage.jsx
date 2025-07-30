@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import client1 from '../assets/client1.jpg';
 import client2 from '../assets/client2.jpg';
 import client3 from '../assets/client3.jpg';
-import bg8 from '../assets/bg8.png'; // your background image
+import bg3 from '../assets/bg3.jpeg'; // your background image
 import TestimonialCards from './TestimonalCards';
 
 const TestimonalsPage = () => {
@@ -31,7 +31,7 @@ const TestimonalsPage = () => {
   return (
     <div
       className="px-2 mt-24 overflow-x-hidden bg-cover bg-center"
-      style={{ backgroundImage: `url(${bg8})` }}
+      style={{ backgroundImage: `url(${bg3})` }}
     >
       <div className="relative z-10 flex flex-col items-center px-4 py-5 lg:px-20">
            {/* Heading */}

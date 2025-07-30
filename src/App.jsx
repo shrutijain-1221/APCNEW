@@ -21,9 +21,10 @@ import Infrastructure from './pages/Infrastructure'
 import ContactUs from './pages/ContactUs'
  import AccessoryProductDetailPage from './pages/AccessoryProductDetailPage'
 import TrendingUsage from './pages/TrendingUsage'
-// import Faq from './pages/Faq'
+import Faq from './pages/Faq'
 // import ContactUs from './pages/ContactUs'
-
+import WhatsappFloat from './pages/WhatsapFloat'
+import ChatbotFloat from './pages/ChatboatFloat'
 // import Interv from './pages/Interv'
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
   </Route>
   <Route path='/accessories/:type/:productId' element={<AccessoryProductDetailPage/>}/>
   <Route path='/trending' element={<TrendingUsage/>}/>
+  <Route path='/faq' element={<Faq/>}/>
       {/* <Route path='/aboutus' element={<AboutUs/>}/>
       // <Route path='/testimonals' element={<TestimonalsPage/>}/>
       <Route path='/products' element={<Products/>}/>
@@ -74,6 +76,9 @@ function App() {
      <ChatbotFloat />
      <WhatsappFloat /> */}
      </BrowserRouter>
+     <WhatsappFloat/>
+     <ChatbotFloat/>
+     <Faq/>
     </>
   )
   

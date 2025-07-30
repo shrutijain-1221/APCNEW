@@ -6,7 +6,7 @@ const Ethical = () => {
   return (
     <div className="relative w-full h-auto">
       {/* Background Image */}
-      <div className="w-full h-full object-cover absolute top-0 left-0 z-0 bg-[#d5d6c6]"/>
+      <div className="w-full h-full object-cover absolute top-0 left-0 z-0 bg-white"/>
 
       {/* Overlay content */}
       <div className="relative z-10 flex flex-col items-center py-20 px-4 md:px-12 lg:px-20">
