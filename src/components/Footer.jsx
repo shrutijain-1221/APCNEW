@@ -30,7 +30,7 @@ const Footer = () => {
         <div className="footer-links">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="/APC/faq">FAQs</a></li>
+            <li><a href="/faq">FAQs</a></li>
             <li><a href="/terms">Quality Control/Checks</a></li>
             <li><a href="/privacy">Terms of Service</a></li>
             <li><a href="/faqs#mode-of-payment">Privacy Policy</a></li>

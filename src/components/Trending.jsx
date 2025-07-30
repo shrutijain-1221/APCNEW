@@ -1,10 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import trending1 from '../assets/trending1.jpeg';
 import trending2 from '../assets/trending2.jpeg';
 import trending3 from '../assets/trending3.jpeg';
 import bg8 from '../assets/bg8.png';
 
 const Trending = () => {
+  const navigate = useNavigate();
+
   return (
     <div
       className="bg-cover bg-center py-20 px-4 sm:px-8"
@@ -13,7 +16,7 @@ const Trending = () => {
       {/* Heading */}
       <div className="text-center mb-16">
         <h2 className="text-5xl sm:text-6xl font-bold font-[Inter] text-[#514747] leading-tight">
-          What’s <span className="font-['Dancing_Script',cursive] text-[#514747]">Trending</span>
+          What's <span className="font-['Dancing_Script',cursive] text-[#514747]">Trending</span>
         </h2>
         <p className="text-[#514747] text-xl sm:text-2xl font-[Inter] mt-4 max-w-3xl mx-auto">
           Discover our most popular fashion accessories loved by customers worldwide
@@ -42,6 +45,16 @@ const Trending = () => {
           <h3 className="text-2xl font-semibold text-[#514747]">Beaded Headbands</h3>
           <p className="text-[#514747] text-md mt-3">Handcrafted headbands with intricate beadwork for elegant styling.</p>
         </div>
+      </div>
+
+      {/* Show More Button */}
+      <div className="text-center mt-16">
+        <button
+          onClick={() => navigate('/trending')}
+          className="bg-[#514747] hover:bg-[#3d3535] text-white font-[Inter] font-semibold text-lg px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+        >
+          More Trending
+        </button>
       </div>
     </div>
   );

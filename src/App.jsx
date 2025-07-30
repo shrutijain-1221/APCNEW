@@ -78,7 +78,6 @@ function App() {
      </BrowserRouter>
      <WhatsappFloat/>
      <ChatbotFloat/>
-     <Faq/>
     </>
   )
   

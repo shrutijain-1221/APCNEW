@@ -150,12 +150,14 @@ const Faq = () => {
   };
 
   return (
-    <div className='mt-24 px-8 '>
-      <h1 className='flex font-oswald  font-medium justify-center text-2xl'>Frequently Asked Questions</h1>
+    <div className='mt-24 px-4 lg:px-20 max-w-6xl mx-auto'>
+      <h1 className='text-5xl md:text-6xl font-bold font-[Inter] text-[#514747] text-center mb-12'>
+        Frequently <span className="font-['Dancing_Script',cursive]">Asked Questions</span>
+      </h1>
 
       {faqs.map((section, sectionIdx) => (
-        <div key={sectionIdx} style={{ marginBottom: 40 }}>
-          <p className='text-xl' style={{ color: '#25D366', borderBottom: '2px solid #eee', paddingBottom: 8 }}>
+        <div key={sectionIdx} className="mb-10">
+          <p className='text-2xl md:text-3xl font-semibold font-["Dancing_Script",cursive] text-[#514747] border-b-2 border-gray-200 pb-3 mb-6'>
             {section.section}
           </p>
 
@@ -166,25 +168,16 @@ const Faq = () => {
             return (
               <div
                 key={qIdx}
-                style={{
-                  marginBottom: 12,
-                  borderBottom: '1px solid #eee',
-                  paddingBottom: 8,
-                  cursor: 'pointer',
-                }}
+                className="mb-4 border-b border-gray-200 pb-4"
               >
                 <h3
                   onClick={() => toggleAnswer(key)}
-                  style={{
-                    color: '#222',
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    fontSize: 20,
-                  }}
+                  className="font-[Inter] text-[#514747] text-lg md:text-xl font-semibold cursor-pointer flex justify-between items-center py-3 hover:text-[#6B5B5B] transition-colors duration-200"
                 >
                   {faq.question}
-                  <span style={{ fontSize: 24 }}>{isOpen ? '−' : '+'}</span>
+                  <span className="text-2xl font-bold ml-4 flex-shrink-0">
+                    {isOpen ? '−' : '+'}
+                  </span>
                 </h3>
 
                 <AnimatePresence initial={false}>
@@ -198,7 +191,7 @@ const Faq = () => {
                       style={{ overflow: 'hidden' }}
                     >
                       <div
-                        style={{ marginTop: 8, color: '#555', fontSize: 18 }}
+                        className="mt-3 text-gray-700 font-[Inter] text-base md:text-lg leading-relaxed"
                         dangerouslySetInnerHTML={{ __html: faq.answer }}
                       />
                     </motion.div>
