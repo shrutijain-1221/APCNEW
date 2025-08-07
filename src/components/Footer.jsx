@@ -1,8 +1,8 @@
 import React from 'react';
-import instagramQr from '../assets/instagram-qr.png'; 
-import facebookQr from '../assets/facebook-qr.png'; 
-import alibabaQr from '../assets/alibaba-qr.png'; 
-import linkedinQr from '../assets/linkedin-qr.png'; 
+import instagramQr from '../assets/APCInstagramQr.png'; 
+import facebookQr from '../assets/APCFacebookQr.png'; 
+import alibabaQr from '../assets/APCAlibabaQr.png'; 
+import linkedinQr from '../assets/APCLinkedinQr.png'; 
 import './Footer.css';
 
 const Footer = () => {
