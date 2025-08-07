@@ -29,10 +29,10 @@ const Infrastructure = () => {
         />
         <div className='absolute inset-0 bg-black/50 flex items-center'>
           <div className="px-4 md:px-32 max-w-5xl">
-            <h2 className="text-4xl md:text-6xl font-semibold text-white font-[Inter] mb-3">
+            <h2 className="text-4xl md:text-6xl font-semibold text-white font-['Dancing_Script',cursive] mb-3">
               Infrastructure
             </h2>
-            <p className="text-base md:text-3xl text-white leading-relaxed font-['Dancing_Script',cursive] ">
+            <p className="text-base md:text-xl text-white leading-relaxed font-[Inter] ">
               Our legacy lies in our capability to meet the demand of the clients with quality products and that too on time. This has been possible for NDEH because of two new-age manufacturing plants in Noida. With over 650 machines set up, these two production lines run flawlessly to churn out the best there is. This also enables us to manufacture around a whopping 2.7 million pieces of clothing every year. Set with modern inner offices and extensive range of apparatus, these NDEH infrastructure are actually examples on their own.
             </p>
           </div>
@@ -98,7 +98,7 @@ const Infrastructure = () => {
       </div>
       <PhotoGallery/>
        <div className="px-4 py-8  max-w-screen-xl mx-auto text-gray-800">
-  <p className="text-md md:text-xl leading-relaxed font-['Inter'] text-[#514747]">
+  <p className="text-md md:text-l leading-relaxed font-['Inter'] text-[#514747]">
     Plants are midway air cooled. Our refined help offices incorporate in-house research facility and CAD.
     The general capacity of electronic information trade has been generously diminished correspondence time
     required for information trade designs amid the testing stages.

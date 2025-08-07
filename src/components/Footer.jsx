@@ -4,7 +4,7 @@ import facebookQr from '../assets/facebook-qr.png';
 import alibabaQr from '../assets/alibaba-qr.png'; 
 import linkedinQr from '../assets/linkedin-qr.png'; 
 import './Footer.css';
-import bg1 from '../assets/bg2.jpeg'
+
 const Footer = () => {
   return (
    <footer
@@ -19,9 +19,6 @@ const Footer = () => {
          <div className="map">
         <iframe
          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.0873318816275!2d77.09097557495875!3d28.68703408160458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d05d81d565401%3A0xe0ef5daaa7cc2b8f!2sAP%20Curated%20Couture!5e0!3m2!1sen!2sus!4v1749885460508!5m2!1sen!2sus"
-          width="400"
-          height="300px"
-          style={{ border: 0 }}
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
