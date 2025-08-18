@@ -80,8 +80,9 @@ const ShopBySeason = () => {
          className="bg-cover bg-center py-16 bg-white"
        >
          <div className="text-center mb-12">
-           <h2 className="text-6xl font-bold font-[Inter] text-[#514747]">
-         Shop by <span className="font-['DanHoricing_Script',cursive] text-[#514747]">Season & Theme</span>
+           <h2 className="text-6xl font-bold font-[Inter] text-[#000000]"
+           style={{fontSize: '80px'}}>
+         Shop by <span className="font-['DanHoricing_Script',cursive] text-[#000000]">Season & Theme</span>
         </h2>
         </div>
      

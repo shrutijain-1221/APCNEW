@@ -13,7 +13,6 @@ import machines from '../assets/machines.png';
 import meassurentexpert from '../assets/meassurent-expert.png';
 import wasing from '../assets/washing.png';
 import PhotoGallery from '../components/PhotoGallery';
-import bg3 from '../assets/bg3.jpeg';
 const Infrastructure = () => {
   return (
     <div className='overflow-x-hidden mt-[90px]'>
@@ -42,61 +41,64 @@ const Infrastructure = () => {
       {/* 3 Column Layout */}
        <div
         className="overflow-x-hidden bg-no-repeat bg-cover bg-fixed"
-        style={{ backgroundImage: `url(${bg3})` }}
       > 
  <div className="px-4 py-12 ">
   <div className="grid grid-cols-1 md:grid-cols-3 gap-0 max-w-screen-xl mx-auto">
           {/* Column 1 */}
-          <div className="flex flex-col gap-0 font-['Inter] text-xl text-[#514747]">
+          <div className="flex flex-col gap-0 font-[Inter] text-xl text-[#514747]">
             <InfraBlock icon={cutting} title="40+ Machines" items={[
               "Single needle lockstitch machine UBT",
-"Double needle lockstitch machine",
-"Over lock 4th 5th 6th (Thread)",
-"Rib Cutter",
-"Computer embroidery machine"
-            ]} />
+              "Double needle lockstitch machine",
+              "Over lock 4th 5th 6th (Thread)",
+              "Rib Cutter",
+              "Computer embroidery machine"
+            ]} titleColor="text-[#5C7F4C]" />
+            
             <InfraBlock icon={machines} title="Cutting Machines" items={[
-              "Straight knife 8”", "Band knife", "Fusing Machine"
-            ]} />
+              "Straight knife 8\"", "Band knife", "Fusing Machine"
+            ]} titleColor="text-[#5C7F4C]" />
+            
             <InfraBlock icon={meassurentexpert} title="Measurement Expert" items={[
               "Fully trained technical team of 8 members."
-            ]} isParagraph />
+            ]} isParagraph titleColor="text-[#5C7F4C]" />
           </div>
 
           {/* Column 2 */}
-          <div className="flex flex-col gap-0 font-['Inter] text-xl text-[#514747]">
+          <div className="flex flex-col gap-0 font-[Inter] text-xl text-[#514747]">
             <InfraBlock icon={cadsystem} title="CAD System" items={[
              "CAD Designer",
 "Fashion Designer",
 "Full set of product development team of 12 people"
-            ]} />
+            ]} titleColor="text-[#5C7F4C]" />
             <InfraBlock icon={finestmaterial} title="Finest Material" items={[
               "Cotton", "Polyesters", "Rayon", "Blends"
-            ]} />
+            ]} titleColor="text-[#5C7F4C]" />
             <InfraBlock icon={dressmaker} title="Dress Maker" items={[
               "CAD Designer", "Fashion Designer", "Full set of product development team of 12 people."
-            ]} />
+            ]} titleColor="text-[#5C7F4C]" />
           </div>
 
           {/* Column 3 */}
-          <div className="flex flex-col gap-0 font-['Inter] text-xl text-[#514747]">
+          <div className="flex flex-col gap-0 font-[Inter] text-xl text-[#514747]">
             <InfraBlock icon={laboratory} title="In House Laboratory" items={[
               "Colour Matching Cabinet", "Tensile strength testing Matching Cabinet", "Tear strength test Matching Cabinet", "Button pull tester", "Yarn count tester", "Washing fastness tester", "Tumbler Matching Cabinet", "Hot air oven", "GSM cutter & washing Balance"
-            ]} />
+            ]} titleColor="text-[#5C7F4C]" />
             <InfraBlock icon={wasing} title="Washing Facility" items={[
              "Washing Machine",
 "Tumbler",
 "Washing fastness tester",
 "Hydro Machine"
-            ]} />
+            ]} titleColor="text-[#5C7F4C]" />
             <InfraBlock icon={embroideryfacility} title="Embroidery Facility" items={[
              "300+ inhouse embroider for hand embroidery",
 "Computer thread embroidery machine"
-            ]} isParagraph />
+            ]} isParagraph titleColor="text-[#5C7F4C]" />
           </div>
         </div>
       </div>
+      <div className="bg-[#cbdac5]">
       <PhotoGallery/>
+      </div>
        <div className="px-4 py-8  max-w-screen-xl mx-auto text-gray-800">
   <p className="text-md md:text-l leading-relaxed font-['Inter'] text-[#514747]">
     Plants are midway air cooled. Our refined help offices incorporate in-house research facility and CAD.
@@ -104,7 +106,7 @@ const Infrastructure = () => {
     required for information trade designs amid the testing stages.
   </p>
   <p className="text-md md:text-xl leading-relaxed mt-4 font-['Inter'] text-[#514747]">
-    The working environment is ergonomically composed with cbdac5opriate lighting, space and solace.
+    The working environment is ergonomically composed with appropriate lighting, space and solace.
   </p>
 </div>
     </div>
@@ -113,11 +115,11 @@ const Infrastructure = () => {
 };
 
 // 🔧 Reusable Component
-const InfraBlock = ({ icon, title, items, isParagraph = false }) => (
+const InfraBlock = ({ icon, title, items, isParagraph = false, titleColor = "text-[#514747]" }) => (
   <div className="p-4">
     <div className="flex items-center gap-2 mb-2">
       <img src={icon} alt="" className="w-16 h-16 bg-black" />
-      <h3 className="">{title}</h3>
+      <h3 className={`font-semibold ${titleColor}`}>{title}</h3>
     </div>
     {isParagraph ? (
       <p className="">→ {items[0]}</p>

@@ -1,6 +1,5 @@
 import React from 'react';
 import centerImg from '../assets/onestop.png'; // Replace with your actual image
-import excelIcon from '../assets/ethical.svg'; // Replace with your icon
 
 const Ethical = () => {
   return (
@@ -11,9 +10,10 @@ const Ethical = () => {
       {/* Overlay content */}
       <div className="relative z-10 flex flex-col items-center py-20 px-4 md:px-12 lg:px-20">
         {/* Title */}
-        <h2 className="text-5xl md:text-6xl font-bold font-[Inter] text-[#514747] text-center mb-20">
+        <h2 className="text-5xl md:text-6xl font-bold font-[Inter] text-[#000000] text-center mb-20"
+        style={{fontSize: '80px'}}>
          Flexible & {' '}
-          <span className="font-['Dancing_Script',cursive] text-[#514747]">
+          <span className="font-['Dancing_Script',cursive] text-[#000000]">
            Fair Practices
           </span>
         </h2>
@@ -22,7 +22,7 @@ const Ethical = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center w-full gap-12 ">
           {/* Left Text Section */}
           <div className="flex-1">
-            <h3 className="text-4xl font-[Inter] font-semibold text-[#514747] mb-4">
+            <h3 className="text-6xl font-[Inter] font-semibold text-[#5b7f4c] mb-4">
               An Ethical <span className="font-['Dancing_Script',cursive]">overseas accessories</span> manufacturer.
             </h3>
             <p className="font-[Inter] text-xl text-[#514747] leading-relaxed mb-3">
@@ -47,7 +47,7 @@ const Ethical = () => {
 
           {/* Right Icon + Text */}
           <div className="flex-1 text-center lg:text-left">
-            <h4 className="text-3xl font-bold text-[#514747] mb-2">ETHICAL MANUFACTURING & SOURCING</h4>
+            <h4 className="text-5xl font-bold text-[#5b7f4c] mb-2">ETHICAL MANUFACTURING & SOURCING</h4>
             <p className="text-[#514747] text-xl leading-relaxed">
             Its your responsibility too! Source from an Ethical Clothing Manufacturer.
             </p>

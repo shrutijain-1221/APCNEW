@@ -3,21 +3,13 @@ import { Outlet } from 'react-router-dom';
 import AccessorySidebar from '../components/AccessorySidebar';
 import MobileSidebarDrawer from '../components/MobileSidebarDrawer';
 import RippleGrid from '../components/RippleGrid';
-import bgImage from '../assets/bgimg1.jpeg';
 import ErrorBoundary from '../components/ErrorBoundary';
 
 const AccessoryLayout = () => {
   return (
     <div
-      className="relative min-h-screen bg-cover bg-center text-gray-800 overflow-x-hidden"
-      style={{ backgroundImage: `url(${bgImage})` }}
+      className="relative min-h-screen bg-cover bg-center text-gray-800 overflow-x-hidden bg-white"
     >
-      {/* RippleGrid Background */}
-      <div className="absolute inset-0 z-0">
-        <ErrorBoundary>
-          <RippleGrid gridColor="#228B22" opacity={0.8} />
-        </ErrorBoundary>
-      </div>
 
       {/* Mobile drawer button (only shows on small screens) */}
       <div className="md:hidden mt-24 relative z-90">

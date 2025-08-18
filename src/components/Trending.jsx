@@ -3,22 +3,21 @@ import { useNavigate } from 'react-router-dom';
 import trending1 from '../assets/trending1.jpeg';
 import trending2 from '../assets/trending2.jpeg';
 import trending3 from '../assets/trending3.jpeg';
-import bg8 from '../assets/bg8.png';
 
 const Trending = () => {
   const navigate = useNavigate();
 
   return (
     <div
-      className="bg-cover bg-center py-20 px-4 sm:px-8"
-      style={{ backgroundImage: `url(${bg8})` }}
+      className="bg-cover bg-center py-20 px-4 sm:px-8 bg-[#CBDAC5]"
     >
       {/* Heading */}
       <div className="text-center mb-16">
-        <h2 className="text-5xl sm:text-6xl font-bold font-[Inter] text-[#514747] leading-tight">
-          What's <span className="font-['Dancing_Script',cursive] text-[#514747]">Trending</span>
+        <h2 className="text-8xl sm:text-6xl font-bold font-[Inter] text-[#000000] leading-tight"
+        style={{fontSize: '80px'}}>
+          What's <span className="font-['Dancing_Script',cursive] text-[#000000]">Trending</span>
         </h2>
-        <p className="text-[#514747] text-xl sm:text-2xl font-[Inter] mt-4 max-w-3xl mx-auto">
+        <p className="text-[#000000] text-xl sm:text-2xl font-[Inter] mt-4 max-w-3xl mx-auto">
           Discover our most popular fashion accessories loved by customers worldwide
         </p>
       </div>

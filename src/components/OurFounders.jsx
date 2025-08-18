@@ -1,36 +1,17 @@
 import React from 'react';
-import bg6 from '../assets/bg8.png';
 import akansha from '../assets/founder.jpg';
 import kamal from '../assets/founder1.jpg';
 import { FaLinkedin } from "react-icons/fa";
-import RippleGrid from './RippleGrid';
-import ErrorBoundary from './ErrorBoundary';
-//import linkedinIcon from '../assets/linkedin.svg'; // Add this icon
 
 const OurFounders = () => {
   return (
-    <div className="relative w-full min-h-screen overflow-hidden">
-      {/* RippleGrid Background */}
-      <div className="absolute inset-0 z-0">
-        <ErrorBoundary>
-          <RippleGrid
-            gridColor="#000000"
-            opacity={0.9}
-          />
-        </ErrorBoundary>
-      </div>
-
-      {/* Background Image */}
-      <img
-        src={bg6}
-        alt="Background"
-        className="w-full h-full object-cover absolute top-0 left-0 z-1 opacity-80"
-      />
+    <div className="relative w-full min-h-screen overflow-hidden bg-[#ffffff]">
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center px-4 py-24 lg:px-20">
         {/* Heading */}
-        <h2 className="text-5xl md:text-6xl font-bold font-[Inter] text-[#514747] text-center mb-12">
+        <h2 className="text-5xl md:text-6xl font-bold font-[Inter] text-[#5b7f4c] text-center mb-12"
+        style={{fontSize: '80px'}}>
           Meet <span className="font-['Dancing_Script',cursive]">the Founders</span>
         </h2>
 
@@ -84,9 +65,9 @@ const OurFounders = () => {
         </div>
 
         {/* Our Story */}
-        <div className="text-center max-w-4xl text-[#514747]">
+        <div className="text-center max-w-4xl text-[#5b7f4c]">
           <h3 className="text-7xl font-['Dancing_Script',cursive] mb-4">Our Story</h3>
-          <p className="text-2xl font-[Inter] leading-relaxed">
+          <p className="text-2xl font-[Inter] leading-relaxed text-[#000000]">
             Founded in 2018 by Akansha and Kamal Piplani, AP Curated Couture began with a bold
             vision to merge fashion with purpose and style with social impact. What started as a
             shared dream is now a globally recognized label known for its handcrafted excellence,

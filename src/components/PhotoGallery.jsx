@@ -19,8 +19,8 @@ const PhotoGallery = () => {
 
   return (
     <>
-    <div className="px-4 py-12 bg-white max-w-screen-xl mx-auto">
-      <h2 className="text-6xl font-semibold text-center mb-8 font-['Dancing_Script',cursive] text-[#514747]">Infrastructure of AP Curated Couture</h2>
+    <div className="px-4 py-12 bg-[#cbdac5] max-w-screen-xl mx-auto">
+      <h2 className="text-6xl font-semibold text-center mb-8 font-['Inter'] text-[#514747]">Infrastructure of <span className="font-['Dancing_Script',cursive]">AP Curated Couture</span></h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {galleryImages.map((img, index) => (
           <div

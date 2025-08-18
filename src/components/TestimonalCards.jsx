@@ -45,7 +45,7 @@ const TestimonialCards = ({ content, image, name, role, reverse }) => {
         initial={{ x: reverse ? -100 : 100, opacity: 0 }}
         animate={inView ? { x: 0, opacity: 1 } : {}}
         transition={{ duration: 0.6 }}
-        className="w-full md:w-full    p-6 max-w-full bg-[#a3d9b1]/40 shadow-md   backdrop-blur-sm"
+        className="w-full md:w-full p-6 max-w-full bg-[#ffffff] shadow-md   backdrop-blur-sm"
       >
         <p className="text-gray-700  text-xl mb-4 whitespace-pre-line">{content}</p>
         <div className="text-2xl text-gray-900 font-semibold">{name}</div>

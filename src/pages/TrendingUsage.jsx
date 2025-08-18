@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import bg8 from '../assets/bg8.png';
 import trending1 from '../assets/trendingHeadband.jpg';
 import trending2 from '../assets/trending3.jpeg';
 import trending3 from '../assets/trending1.jpeg';
@@ -121,25 +120,21 @@ const TrendingUsage = () => {
   const categories = [...new Set(products.map(product => product.category))];
 
   return (
-    <div className="relative w-full min-h-screen overflow-hidden pb-16">
-      {/* Background Image */}
-      <img
-        src={bg8}
-        alt="Background"
-        className="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-60"
-      />
+    <div className="relative w-full min-h-screen overflow-hidden pb-16 bg-[#CBDAC5]">
 
       {/* Content */}
       <div className="relative z-10">
         {/* Heading */}
         <div className="text-center pt-32 pb-16">
-          <h1 className="text-6xl font-bold font-[Inter] text-[#514747] mb-4">
+          <h1 className="text-6xl font-bold font-[Inter] text-[#000000] mb-4"
+          style={{fontSize: '80px'}}
+          >
             Trending{" "}
-            <span className="font-['Dancing_Script',cursive] text-[#514747]">
+            <span className="font-['Dancing_Script',cursive] text-[#000000]">
               Products
             </span>
           </h1>
-          <p className="text-2xl font-['Dancing_Script',cursive] text-[#514747] max-w-4xl mx-auto px-4">
+          <p className="text-4xl font-['Dancing_Script',cursive] text-[#000000] max-w-4xl mx-auto px-4">
             Discover our most popular fashion accessories loved by customers worldwide
           </p>
         </div>

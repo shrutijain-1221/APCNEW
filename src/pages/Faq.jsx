@@ -31,7 +31,7 @@ const faqs = [
       },
       {
         question: 'How do you guarantee your product quality?',
-        answer: 'We always provide a pre-production sample before mass production. First, we share <b>digital mockups</b>, followed by a <b>physical sample</b> for your cbdac5oval before production begins. We also carry out a final inspection before shipment as per client requirements. Upon request, we share a <b>video of every final piece</b> before shipping.'
+        answer: 'We always provide a pre-production sample before mass production. First, we share <b>digital mockups</b>, followed by a <b>physical sample</b> for your approval before production begins. We also carry out a final inspection before shipment as per client requirements. Upon request, we share a <b>video of every final piece</b> before shipping.'
       },
     ]
   },
@@ -53,7 +53,7 @@ const faqs = [
     qas: [
       {
         question: 'How can I place an order?',
-        answer: 'Here is the step-by-step order process:<br/>➡ Custom Design Inquiry<br/>➡ Chat With Us<br/>➡ Explore Our Products<br/>➡ Place an Order<br/>➡ Deposit Token Amount<br/>➡ First Sample cbdac5oval<br/>➡ Production<br/>➡ Pay the Balance<br/>➡ Dispatching of Goods'
+        answer: 'Here is the step-by-step order process:<br/>➡ Custom Design Inquiry<br/>➡ Chat With Us<br/>➡ Explore Our Products<br/>➡ Place an Order<br/>➡ Deposit Token Amount<br/>➡ First Sample approval<br/>➡ Production<br/>➡ Pay the Balance<br/>➡ Dispatching of Goods'
       },
       {
         question: 'What payment methods do you accept?',
@@ -117,7 +117,7 @@ const faqs = [
     qas: [
       {
         question: 'Do you offer private labelling?',
-        answer: 'Yes, we do. We are one of the top private label clothing manufacturers in India and provide all kinds of clothing manufacturing services as per the requirements of our customer. We can offer customized styles, sizes, colors, fabrics, embroideries, packaging materials etc. From garments to custom tags and packaging, get everything you need made under one roof with us. Our all-rounded professional cbdac5oach means we take care of the entire supply chain, so that you can save time, money and effort and channel them into back into your business.'
+        answer: 'Yes, we do. We are one of the top private label clothing manufacturers in India and provide all kinds of clothing manufacturing services as per the requirements of our customer. We can offer customized styles, sizes, colors, fabrics, embroideries, packaging materials etc. From garments to custom tags and packaging, get everything you need made under one roof with us. Our all-rounded professional approach means we take care of the entire supply chain, so that you can save time, money and effort and channel them into back into your business.'
       },
       {
         question: 'What type of garments do you manufacture?',
@@ -191,7 +191,7 @@ const Faq = () => {
                       style={{ overflow: 'hidden' }}
                     >
                       <div
-                        className="mt-3 text-gray-700 font-[Inter] text-base md:text-lg leading-relaxed"
+                        className="mt-3 text-[#5c7f4c] font-[Inter] text-base md:text-lg leading-relaxed"
                         dangerouslySetInnerHTML={{ __html: faq.answer }}
                       />
                     </motion.div>

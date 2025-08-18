@@ -182,7 +182,7 @@ const AboutUs = () => {
       initial={{ opacity: 0, x: 100 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1 }}
-      className="w-full md:w-1/2 bg-white shadow-xl p-6 md:p-5"
+      className="w-full md:w-1/2 bg-white shadow-sm p-6 md:p-5"
     >
       <p className="text-[#444] text-sm ">
         Our journey to becoming India’s top-rated and trending accessories manufacturer and exporter began in 2016, when our co-founder and creative director <strong>Akansha Piplani</strong> completed her post-graduation in fashion design. Early work with international fashion labels revealed an essential truth: a great design deserves a great manufacturer.<br /><br />

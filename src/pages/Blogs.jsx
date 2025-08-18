@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import axiosInstance from '../utils/axiosInstance'; // Axios instance with baseURL
-import bg10 from '../assets/bg8.png';
 
 // Import blog images
 import blog1 from '../assets/blog1.jpg';
@@ -225,9 +224,7 @@ const Blogs = () => {
 
    return (
     <div
-      className="px-4 py-12 mt-10 overflow-x-hidden bg-cover bg-center min-h-screen"
-      style={{ backgroundImage: `url(${bg10})` }} // Step 2
-    >
+      className="px-4 py-12 mt-10 overflow-x-hidden bg-cover bg-center min-h-screen bg-[#CBDAC5]">
            <div className="relative z-10 flex flex-col items-center px-4 py-5 lg:px-20">
            {/* Heading */}
            <h2 className="text-5xl md:text-6xl font-bold font-[Inter] text-[#514747] text-center ">

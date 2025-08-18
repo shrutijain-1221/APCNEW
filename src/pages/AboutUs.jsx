@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import akanshaImg from '../assets/founder.jpg'; 
 import kamalImg from '../assets/founder1.jpg'; 
 import group from '../assets/team_photo.png'; 
@@ -13,7 +12,6 @@ import about5 from '../assets/about5.jpg';
 import asso1 from '../assets/asso1.png';
 import asso2 from '../assets/asso2.png';
 import asso3 from '../assets/asso3.jpg';
-import bg3 from '../assets/bg3.jpeg';
 // Inside AboutUs component
 const teamImages = [
  about1,
@@ -28,12 +26,9 @@ const AboutUs = () => {
       
 <div className="relative ">
 
-  <motion.img
+  <img
     src={group} 
     alt="Group of Employees"
-   initial={{ opacity: 0, x: 100 }}
-    animate={{ opacity: 1, x: 0 }}
-    transition={{ duration: 1 }}
     className="w-full h-[350px] md:h-full shadow-lg"
   />
   <div className='inset-0 bg-black/50 absolute '>
@@ -50,17 +45,13 @@ const AboutUs = () => {
    </div> 
    <div
   className="overflow-x-hidden bg-no-repeat bg-cover bg-fixed"
-  style={{ backgroundImage: `url(${bg3})` }}
 > 
-   <h2 className="text-5xl font-semibold font-['Dancing_Script',cursive] text-center mt-10  text-[#514747] mb-5">
-        Meet Our Founders
+   <h2 className="text-6xl font-semibold font-[Inter] text-center mt-10  text-[#514747] mb-5">
+        Meet Our <span className="font-['Dancing_Script',cursive]">Founders</span>
       </h2>
 <div className="grid md:grid-cols-2 gap-28 items-center mb-20 px-10">
  
-<motion.div
-  initial={{ opacity: 0, scale: 0 }}
-  animate={{ opacity: 1, scale: 1 }}
-  transition={{ duration: 1 }}
+<div
   className="relative flex justify-center w-full"
 >
   <div className="relative">
@@ -71,23 +62,23 @@ const AboutUs = () => {
     />
     {/* Overlay */}
     <div className="absolute bottom-4 left-1/2 -translate-x-1/2 transform flex ">
-      <div className="bg-red-600 text-white p-4 shadow-md w-32 text-center">
-        <p className="text-2xl font-bold">1K+</p>
-        <p className="text-sm">projects succeeded</p>
+      <div className="bg-[#cbdac5] text-black p-4 shadow-md w-36 text-center">
+        <p className="text-3xl font-bold">1K+</p>
+        <p className="text-l text-center">projects succeeded</p>
       </div>
-      <div className="bg-[#1a1a1a] text-white p-4 shadow-md w-32 text-center">
-        <p className="text-2xl font-bold">8yrs+</p>
-        <p className="text-sm">of professional experience</p>
+      <div className="bg-[#1a1a1a] text-white p-4 shadow-md w-36 text-center">
+        <p className="text-3xl font-bold">8yrs+</p>
+        <p className="text-l text-center">of professional experience</p>
       </div>
     </div>
   </div>
-</motion.div>
+</div>
 
 
   {/* Right side description */}
   <div className="text-lg font-[Inter] text-[#514747] leading-relaxed">
-  <h3 className="text-4xl font-semibold font-[Inter] text-[#514747] mb-1">Akansha Piplani</h3>
-  <p className="font-[Inter] text-[#514747] mb-4">Co-Founder & CEO</p>
+  <h3 className="text-5xl font-semibold font-[Inter] text-[#514747] mb-1">Akansha Piplani</h3>
+  <p className="font-[Inter] text-[#514747] mb-4 text-2xl">Co-Founder & CEO</p>
   <p className="mb-4 text-2xl">
     Akansha Piplani is a Fashion Designer with an MBA in Marketing, whose passion for creativity and empowerment led to the founding of AP Curated Couture in 2018. With over six years of design expertise, she transformed her vision into a purpose-driven brand that supports rural Indian artisans, especially women.
   </p>
@@ -101,8 +92,8 @@ const AboutUs = () => {
 <div className="grid md:grid-cols-2 gap-28 items-center mb-20 px-10">
   {/* Left text block */}
  <div className="text-lg font-[Inter] text-[#514747] leading-relaxed">
-  <h3 className="text-4xl font-semibold font-[Inter] text-[#514747] mb-1">Kamal Piplani</h3>
-  <p className="font-[Inter] text-[#514747] mb-4">Co-Founder & COO</p>
+  <h3 className="text-5xl font-semibold font-[Inter] text-[#514747] mb-1">Kamal Piplani</h3>
+  <p className="font-[Inter] text-[#514747] mb-4 text-2xl">Co-Founder & COO</p>
   <p className="mb-4  text-2xl">
     Kamal Piplani, a BBA graduate from Symbiosis and MBA from IMT Ghaziabad, co-founded AP Curated Couture in 2018 alongside Akansha. With a strategic mindset, he focuses on business growth, international expansion, and driving operational excellence for the brand.
   </p>
@@ -111,10 +102,7 @@ const AboutUs = () => {
   </p>
 </div>
   {/* Image with overlay */}
-<motion.div
-  initial={{ opacity: 0, scale: 0 }}
-  animate={{ opacity: 1, scale: 1 }}
-  transition={{ duration: 1, delay: 0.5 }}
+<div
   className="relative w-full  order-1 md:order-2"
 >
   <img
@@ -124,34 +112,34 @@ const AboutUs = () => {
   />
  <div className="absolute bottom-4  flex left-1/2 transform -translate-x-1/2 ">
   {/* Box 1 - Red */}
-  <div className="bg-red-600 text-white p-4  shadow-md w-32">
-    <p className="text-2xl font-bold">1K+</p>
-    <p className="text-sm">projects succeeded</p>
+  <div className="bg-[#cbdac5] text-black p-4 text-center shadow-md w-36">
+    <p className="text-3xl text-center font-bold">1K+</p>
+    <p className="text-l text-center">projects succeeded</p>
   </div>
 
   {/* Box 2 - Dark (Black or Dark Gray) */}
-  <div className="bg-[#1a1a1a] text-white p-4  shadow-md w-32">
-    <p className="text-2xl font-bold">12yrs+</p>
-    <p className="text-sm">of professional experience</p>
+  <div className="bg-[#1a1a1a] text-white p-4 text-center shadow-md w-36">
+    <p className="text-3xl font-bold">12yrs+</p>
+    <p className="text-l text-center">of professional experience</p>
   </div>
 </div>
 
-</motion.div>
+</div>
 </div>
 
       {/* Video Section */}
       {/* Video Section */}
 {/* Our Story Section */}
 {/* Our Story Section */}
-<div className="mt-20 px-4 sm:px-8">
+<div className="mt-20 px-4 pt-10 sm:px-8 bg-[#cbdac5]">
   <h3 className="text-4xl md:text-6xl font-semibold text-center font-['Dancing_Script',cursive] text-[#514747] mb-2">
-    Our Story
+    <span className="font-['Inter']">Our </span> Story
   </h3>
   <p className="text-center font-[Inter] text-[#514747] text-lg font-medium mb-10">
     AP Curated Couture – a legacy of design, detail & dedication in accessories
   </p>
 
-  <div className="flex flex-col md:flex-row gap-8 items-start">
+  <div className="flex flex-col md:flex-row gap-8 items-start py-10">
     {/* Left Image Slider */}
     <div className="w-full md:w-1/2">
       <Slider
@@ -170,7 +158,7 @@ const AboutUs = () => {
             <img
               src={src}
               alt={`Story Image ${index + 1}`}
-              className="w-full h-[500px] object-cover object-fit shadow-lg"
+              className="w-full h-[600px] object-cover object-fit shadow-lg"
             />
           </div>
         ))}
@@ -178,14 +166,11 @@ const AboutUs = () => {
     </div>
 
     {/* Right Single Content Block */}
-    <motion.div
-      initial={{ opacity: 0, x: 100 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1, delay: 1 }}
-      className="w-full md:w-1/2 bg-white shadow-xl p-6 md:p-5"
+    <div
+      className="w-full md:w-1/2 bg-white shadow-xl p-4 md:p-6 h-auto md:h-[600px] overflow-y-auto"
     >
-      <p className="font-[Inter] text-[#514747] text-sm ">
-        Our journey to becoming India’s top-rated and trending accessories manufacturer and exporter began in 2016, when our co-founder and creative director <strong>Akansha Piplani</strong> completed her post-graduation in fashion design. Early work with international fashion labels revealed an essential truth: a great design deserves a great manufacturer.<br /><br />
+      <p className="font-[Inter] text-[#514747] text-sm md:text-base leading-relaxed">
+        Our journey to becoming India's top-rated and trending accessories manufacturer and exporter began in 2016, when our co-founder and creative director <strong>Akansha Piplani</strong> completed her post-graduation in fashion design. Early work with international fashion labels revealed an essential truth: a great design deserves a great manufacturer.<br /><br />
 
         This insight led her to start a small-batch setup called <strong>AP Curated Couture®</strong> in 2018, with one mission: to honour every design through super-specialized production. The guiding principle was simple—whatever we make must be extraordinary.<br /><br />
 
@@ -195,7 +180,7 @@ const AboutUs = () => {
 
         We have dedicated ourselves to providing state-of-the-art, technology-equipped production factories in 3 rural areas to meet the fast-changing fashion industry line in accessories, with a capacity of producing more than <strong>50,000+ accessories monthly</strong>. Be it headbands, clutches, tote bags, bag straps, earrings, or any other product—we possess great know-how to surprise with our exquisite workmanship at the most affordable price in all lines of accessories!
       </p>
-    </motion.div>
+    </div>
   </div>
 </div>
 
@@ -203,13 +188,15 @@ const AboutUs = () => {
 
 
 <div className="mt-20 mb-10">
-  <h3 className="text-3xl md:text-5xl font-semibold text-center font-['Dancing_Script',cursive] text-[#514747] mb-2">
+  <h3 className="text-3xl md:text-5xl font-semibold text-center font-[Inter] text-[#514747] mb-2"
+  style={{ fontSize: '50px' }}
+  >
     Association
   </h3>
   <div className='flex flex-col md:flex-row justify-center gap-16 items-center mt-10'>
-<img src={asso1} alt='asso1' className='w-72 h-40 object-contain' />
-<img src={asso2} alt='asso2' className='w-72 h-40 object-contain' />
-<img src={asso3} alt='asso3' className='w-72 h-40 object-contain' />
+<img src={asso1} alt='asso1' className='w-102 h-90 object-contain' />
+<img src={asso2} alt='asso2' className='w-102 h-90 object-contain' />
+<img src={asso3} alt='asso3' className='w-102 h-90 object-contain' />
   </div>
   </div>
 </div> 

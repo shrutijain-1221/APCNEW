@@ -67,8 +67,23 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      {/* Welcome Message Section */}
+      <div className="w-full bg-[#514748] py-8 px-6">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#514747] mb-4 font-[Inter]">
+            Welcome to AP Curated Couture – Your Global Source for Beaded Elegance!
+          </h2>
+          <p className="text-lg md:text-xl text-[#ffffff] mb-4 leading-relaxed">
+            We are a fast-growing fashion accessories export brand specializing in handcrafted, beaded creations. From stunning tote bags and clutches to statement women's accessories and seasonal must-haves – every piece is designed with artistry and crafted with care.
+          </p>
+          <div className="text-2xl font-semibold text-[#ffffff] font-['Dancing_Script',cursive]">
+            ✨ Wholesale Only | Made to Impress | Crafted to Last
+          </div>
+        </div>
+      </div>
       <div className="footer-bottom">&copy; {new Date().getFullYear()} APC. All rights reserved.</div>
     </footer>
+    
   );
 };
 

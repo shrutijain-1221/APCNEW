@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import { RiMenu3Line } from "react-icons/ri";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 const navLinkStyle = ({ isActive }) =>
   `font-[Inter] text-[#514747] font-normal text-lg leading-[100%] pb-1 border-b-2 transition-all duration-200 ${
@@ -11,35 +12,13 @@ const navLinkStyle = ({ isActive }) =>
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-  const location = useLocation();
-  const isHomePage = location.pathname === '/';
+  const [aboutDropdownOpen, setAboutDropdownOpen] = useState(false);
+  const [infrastructureDropdownOpen, setInfrastructureDropdownOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(prev => !prev);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  // Determine navbar background based on page and scroll state
-  const getNavbarBackground = () => {
-    if (isHomePage) {
-      // On home page, only show background when scrolled
-      return isScrolled ? 'bg-white shadow-md' : 'bg-transparent';
-    } else {
-      // On other pages, always show solid white background on mobile, semi-transparent on desktop
-      return isScrolled 
-        ? 'bg-white shadow-md' 
-        : 'bg-white md:bg-white/80 md:backdrop-blur-md';
-    }
-  };
-
   return (
-   <div className={`fixed top-0 left-0 z-50 w-full h-[90px] px-6 md:px-20 transition-all duration-300 ${getNavbarBackground()}`}>
+   <div className={`fixed top-0 left-0 z-50 w-full h-[90px] px-6 md:px-20 transition-all duration-300 bg-white shadow-md`}>
 
       <div className="flex items-center justify-between w-full h-full">
        <a href="/" className="text-2xl font-bold font-[Inter]">AP <span className="font-['Dancing_Script',cursive] font-bold">Curated Couture</span></a>
@@ -47,14 +26,13 @@ const Navbar = () => {
         {/* Desktop Nav */}
         <ul className="hidden md:flex gap-8 items-center h-full">
           <li><NavLink to="/" className={navLinkStyle}>Apparels</NavLink></li>
-
           {/* Dropdown */}
           <li
             className="relative"
             onMouseEnter={() => setDropdownOpen(true)}
             onMouseLeave={() => setDropdownOpen(false)}
           >
-            <NavLink to="/accessories" className={navLinkStyle}>Accessories</NavLink>
+            <NavLink to="/accessories" className={navLinkStyle}>Our Products</NavLink>
             <AnimatePresence>
               {dropdownOpen && (
                 <motion.div
@@ -66,7 +44,7 @@ const Navbar = () => {
                 >
                   {/* Hair Accessories */}
                   <div>
-                    <h4 className="font-semibold text-2xl font-['Dancing_Script',cursive] text-[#514747] mb-2">Hair Accessories</h4>
+                    <h4 className="font-semibold text-2xl font-['Dancing_Script',cursive] text-[#514747] hover:text-[#a3d9b1] mb-2">Hair Accessories</h4>
                     <ul className="space-y-1 pl-2 font-[Inter] text-[20px] text-[#514747]">
                       <li><NavLink to="/accessories/headbands">Headbands</NavLink></li>
                       <li><NavLink to="/accessories/scrunchies">Scrunchies</NavLink></li>
@@ -79,7 +57,7 @@ const Navbar = () => {
 
                   {/* Jewelry */}
                   <div>
-                    <h4 className="font-semibold text-2xl font-['Dancing_Script',cursive] text-[#514747] mb-2">Jewelry & Small Accessories</h4>
+                    <h4 className="font-semibold text-2xl font-['Dancing_Script',cursive] text-[#514747] hover:text-[#a3d9b1] mb-2">Jewelry & Small Accessories</h4>
                      <ul className="space-y-1 pl-2 font-[Inter] text-[20px] text-[#514747]">
                       <li><NavLink to="/accessories/earrings">Earrings</NavLink></li>
                       <li><NavLink to="/accessories/brooches">Brooches</NavLink></li>
@@ -92,7 +70,7 @@ const Navbar = () => {
 
                   {/* Bags */}
                   <div>
-                    <h4 className="font-semibold text-2xl font-['Dancing_Script',cursive] text-[#514747] mb-2">Bags & Storage</h4>
+                    <h4 className="font-semibold text-2xl font-['Dancing_Script',cursive] text-[#514747] hover:text-[#a3d9b1] mb-2">Bags & Storage</h4>
                      <ul className="space-y-1 pl-2 font-[Inter] text-[20px] text-[#514747]">
                       <li><NavLink to="/accessories/tote-bags">Tote Bags</NavLink></li>
                       <li><NavLink to="/accessories/coin-purses">Coin Purses</NavLink></li>
@@ -105,7 +83,7 @@ const Navbar = () => {
 
                   {/* Misc */}
                   <div>
-                    <h4 className="font-semibold text-2xl font-['Dancing_Script',cursive] text-[#514747] mb-2">Miscellaneous</h4>
+                    <h4 className="font-semibold text-2xl font-['Dancing_Script',cursive] text-[#514747] hover:text-[#a3d9b1] mb-2">Miscellaneous</h4>
                     <ul className="space-y-1 pl-2 font-[Inter] text-[20px] text-[#514747]">
                       <li><NavLink to="/accessories/eye-masks">Eye Masks</NavLink></li>
                       <li><NavLink to="/accessories/coasters">Coasters</NavLink></li>
@@ -117,12 +95,56 @@ const Navbar = () => {
               )}
             </AnimatePresence>
           </li>
-
+          {/* About Us Dropdown */}
+          <li
+            className="relative"
+            onMouseEnter={() => setAboutDropdownOpen(true)}
+            onMouseLeave={() => setAboutDropdownOpen(false)}
+          >
+            <NavLink to="/aboutus" className={navLinkStyle}>About Us</NavLink>
+            <AnimatePresence>
+              {aboutDropdownOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: 0 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 10 }}
+                  transition={{ duration: 0.2 }}
+                  className="absolute top-8 left-0 mt-2 z-50 w-64 p-2 bg-white shadow-lg rounded-md"
+                >
+                  <ul className="space-y-3 font-[Inter] text-[18px] text-[#514747] hover:text-[#a3d9b1]">
+                    <li><NavLink to="/aboutus/our-story">Our Story</NavLink></li>
+                  </ul>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </li>
+          {/* Infrastructure Dropdown */}
+          <li
+            className="relative"
+            onMouseEnter={() => setInfrastructureDropdownOpen(true)}
+            onMouseLeave={() => setInfrastructureDropdownOpen(false)}
+          >
+            <NavLink to="/infrastructure" className={navLinkStyle}>Infrastructure</NavLink>
+            <AnimatePresence>
+              {infrastructureDropdownOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: 0 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 10 }}
+                  transition={{ duration: 0.2 }}
+                  className="absolute top-8 left-0 mt-2 z-50 w-64 p-2 bg-white shadow-lg rounded-md"
+                >
+                  <ul className="space-y-3 font-[Inter] text-[18px] text-[#514747] hover:text-[#a3d9b1]">
+                    <li><NavLink to="/infrastructure/ethical-manufacturing">Ethical Manufacturing</NavLink></li>
+                  </ul>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </li>
           <li><NavLink to="/trending" className={navLinkStyle}>Trending</NavLink></li>
-          <li><NavLink to="/aboutus" className={navLinkStyle}>About Us</NavLink></li>
-          <li><NavLink to="/blogs" className={navLinkStyle}>Blogs</NavLink></li>
-          <li><NavLink to="/infrastructure" className={navLinkStyle}>Infrastructure</NavLink></li>
           <li><NavLink to="/testimonals" className={navLinkStyle}>Testimonials</NavLink></li>
+          <li><NavLink to="/blogs" className={navLinkStyle}>Blogs</NavLink></li>
+          <li><NavLink to="/faq" className={navLinkStyle}>FAQs</NavLink></li>
           <li>
             <NavLink
               to="/contact"
@@ -163,12 +185,14 @@ const Navbar = () => {
             <div className="mt-20 flex flex-col items-start gap-6 font-[Inter] text-[24px] leading-[100%]">
               {[
                 { to: "/", label: "Apparels" },
-                { to: "/accessories", label: "Accessories" },
-                { to: "/trending", label: "Trending" },
+                { to: "/accessories", label: "Our Products" },
                 { to: "/aboutus", label: "About Us" },
+                { to: "/aboutus/our-story", label: "Our Story" },
+                { to: "/infrastructure", label: "Infrastructure" },
+                { to: "/infrastructure/ethical-manufacturing", label: "Ethical Manufacturing" },
+                { to: "/trending", label: "Trending" },
                 { to: "/blogs", label: "Blogs" },
                 { to: "/testimonals", label: "Testimonials" },
-                { to: "/infrastructure", label: "Infrastructure" },
                 { to: "/faq", label: "FAQ" }
               ].map(({ to, label }) => (
                 <NavLink

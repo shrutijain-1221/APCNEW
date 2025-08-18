@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaCheckCircle } from 'react-icons/fa';
-import bg10 from '../assets/bg10.jpg'
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -125,8 +124,7 @@ const ContactUs = () => {
 
       {/* Header Section */}
       <div
-        className="overflow-x-hidden bg-no-repeat bg-cover bg-fixed"
-        style={{ backgroundImage: `url(${bg10})` }}
+        className="overflow-x-hidden bg-no-repeat bg-cover bg-fixed bg-[#CBDAC5]"
       > 
         <div className="text-center mb-12">
           <h2 className="text-6xl font-semibold font-[Inter] mt-20 text-[#514747]">
